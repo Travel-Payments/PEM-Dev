@@ -1,0 +1,8 @@
+.errorPage{
+    text-align: center;
+    padding: 20px;
+    font-size: 22px;
+    color: rgb(235, 25, 25);
+    background-color: white;
+    width: 100%;
+}
