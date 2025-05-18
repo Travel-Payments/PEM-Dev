@@ -1,0 +1,80 @@
+.homeDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    font-family: Poppins, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+.tnplogo {
+   display: block;
+    height: 300px;
+    width: 700px;
+    margin: 20px auto ;
+    padding: 10px;
+}
+.profileButton{
+    height: 55px;
+    width:fit-content;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-size: 22px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 1.5px 1.5px 5px 1.5px rgba(0, 0, 0, 0.75);
+}
+.signIn{
+    height: 55px;
+    width: 140px;
+    display: block;
+    margin-top: 40px ;
+    padding: 10px;
+    background-color:black;
+    color: white;
+    font-size: 22px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 1.5px 1.5px 5px 1.5px rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.signIn:hover{
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+    transition: 0.3s;
+    width: 130px;
+}
+.profileButton:hover{
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+    transition: 0.3s;
+    width: 130px;
+}
+@media screen and (max-width: 600px) {
+    .tnplogo {
+        height: 200px;
+        width: 400px;
+    }
+    .homeDiv p{
+        font-size: 20px;
+    }
+    .signIn{
+        font-size:20px;
+        height: 45px;
+        padding: 5px;
+        border-radius: 8px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .homeDiv p{
+        font-size: 17px;
+    }
+    .signIn{
+        height: 40px;
+        padding: 5px;
+        font-size:15px
+    }
+}
