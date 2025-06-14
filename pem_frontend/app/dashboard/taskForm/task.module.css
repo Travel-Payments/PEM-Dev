@@ -1,0 +1,146 @@
+.taskHeader{
+    padding: 10px;
+    font-size: 18px;
+    color:rgb(77, 76, 76);
+    font-weight: bold;
+    width: 100%;
+    border-bottom: 1px solid rgb(181, 180, 180);
+    text-align: center;
+}
+
+.taskForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    width: 80%;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 1.5px 1.5px 5px 1.5px rgba(181, 180, 180, 0.75);
+    font-size: 18px;
+}
+
+.taskFormInput{
+    display: block;
+    width: 85%;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px;
+    border-color: rgb(177, 176, 176);
+    border-width: 1px;
+    font-size: 18px;
+}
+
+.taskForm label{
+    color: rgb(161, 160, 160)
+}
+
+.taskFormInputDesc{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    height: 100px;
+}
+.taskFormTime{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding: 0;
+    margin:auto
+}
+
+.taskFormInput1{
+    display: block;
+    width: 50%;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px;
+    border-color: rgb(177, 176, 176);
+    border-width: 1px;
+    font-size: 18px;
+}
+
+.taskFormSubmit{
+    display: block;
+    background-color: rgb(51, 52, 70);
+    color: white;
+    padding: 10px 20px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    margin: 20px  auto;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.taskFormSubmit:hover{
+    box-shadow: 0px 0px 15px 0px rgba(146, 144, 144, 0.75);
+    background-color: rgb(1, 112, 1);
+    width: 190px;
+}
+
+@media screen and (max-width: 850px) {
+    .taskForm input{
+        font-size: 15px;
+    }
+    .taskForm label{
+        font-size: 15px;
+    }
+    .taskFormSubmit{
+        width: 100%;
+        font-size: 15px;
+    }
+    .taskFormInputDesc{
+        font-size: 15px;
+        width: 90%;
+    }
+    .taskFormInput{
+        width: 84%;
+    }
+    .taskFormInput1{
+        width: 60%;
+    }
+    .taskFormSubmit:hover{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    .taskForm{
+        width: 90%;
+        padding: 10px;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+
+    .taskFormInputDesc{
+        width: 100%;
+    }
+    .taskFormInput{
+        width: 90%;
+    }
+    .taskFormTime{
+        width: 100%;
+    }
+    .taskFormInput1{
+        width: 41%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .taskFormTime{
+        flex-direction: column;
+        align-items: center;
+    }
+    .taskFormInput1{
+        width: 90%;
+        margin: 10px;
+    }
+}

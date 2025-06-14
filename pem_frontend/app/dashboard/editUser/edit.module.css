@@ -1,0 +1,127 @@
+.formDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 1.5px 1.5px 5px 1.5px rgba(181, 180, 180, 0.75);
+}
+
+.formDiv h1{
+    font-weight: bold;
+    color: rgb(51, 52, 70);
+    border-bottom: 2px solid rgb(198, 198, 201);
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.inputDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.inputDiv > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    margin: 20px auto;
+    width: 85%;
+    border-bottom: 2px solid rgb(177, 176, 176);
+}
+
+.inputDiv label, .inputDiv select, .inputDiv input{
+    display: block;
+    margin: 5px;
+    width: 100%;
+}
+
+.inputDiv label{
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(63, 63, 63);
+    font-size: 20px;
+    position: relative;
+    right: -10px;
+}
+
+.inputDiv input, .inputDiv select{
+    border-radius: 5px;
+    padding: 10px;
+    color: black;
+    font-size: 18px;
+    border:none;
+    outline: none;
+}
+
+.submitDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.submitDiv > div {
+    width: 45%;
+}
+
+.submitDiv button{
+    display: block;
+    color: white;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 1.5px 1.5px 5px 1.5px rgba(181, 180, 180, 0.75);
+    transition: 0.3s;
+    margin: 20px auto;
+}
+
+
+.add {
+    background-color: rgb(4, 78, 40);
+    font-size: 20px;
+    width: 50%;
+    padding: 10px 20px;
+}
+
+.delete {
+    background-color: rgb(137, 6, 6);
+    font-size: 20px;
+    width: 50%;
+    padding: 10px 20px;
+}
+
+.add:hover, .delete:hover{
+    width: 40%;
+    box-shadow: 0px 0px 15px 0px rgba(51, 52, 70, 0.75);
+}
+
+@media screen and (max-width: 700px){
+    .inputDiv label,.add, .delete{
+        font-size: 15px ;
+    }
+    .inputDiv input, .inputDiv select{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .add, .delete{
+        padding: 5px 10px;
+        width: 90%;
+    }
+    .add:hover, .delete:hover{
+        width: 80%;
+    }
+}

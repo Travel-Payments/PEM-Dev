@@ -1,0 +1,17 @@
+.statusBox{
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    padding: 20px;
+    background-color: #f9edab;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(235, 199, 161, 0.974);
+    z-index: 1000;
+    font-size: 15px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    /* animation: ; */
+}
